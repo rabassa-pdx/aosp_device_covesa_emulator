@@ -26,8 +26,8 @@ PRODUCT_COPY_FILES += \
 
 BUILD_EMULATOR_CLUSTER_DISPLAY := true
 
-$(call inherit-product, device/generic/goldfish/car/sdk_car_arm64.mk)
+$(call inherit-product, device/generic/car/sdk_car_arm64.mk)
 
 PRODUCT_NAME := covesa_emu_arm64_car
-PRODUCT_DEVICE := emulator_car64_x86_64
+PRODUCT_DEVICE := emulator_car64_arm64
 PRODUCT_MODEL := COVESA car emulator for arm64
