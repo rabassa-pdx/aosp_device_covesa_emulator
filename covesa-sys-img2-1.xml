@@ -229,9 +229,9 @@ For further information see https://covesa.global
    See the License for the specific language governing permissions and
    limitations under the License.
   </license>
-  <remotePackage path="system-images;android-31;android-automotive;arm64-v8a">
+  <remotePackage path="system-images;android-35;android-automotive;arm64-v8a">
     <type-details xsi:type="sys-img:sysImgDetailsType">
-        <api-level>31</api-level>
+        <api-level>35</api-level>
         <tag>
             <id>android-automotive</id>
             <display>Automotive</display>
@@ -252,14 +252,14 @@ For further information see https://covesa.global
             <complete>
                 <size>TODO</size>
                 <checksum type="sha1">TODO</checksum>
-                <url>covesa-avd-arm64-v8a-31_r34.zip</url>
+                <url>covesa-avd-arm64-v8a-35_r23.zip</url>
             </complete>
         </archive>
     </archives>
   </remotePackage>
-  <remotePackage path="system-images;android-31;android-automotive;x86_64">
+  <remotePackage path="system-images;android-35;android-automotive;x86_64">
     <type-details xsi:type="sys-img:sysImgDetailsType">
-        <api-level>31</api-level>
+        <api-level>35</api-level>
         <tag>
             <id>android-automotive</id>
             <display>Automotive</display>
@@ -280,7 +280,7 @@ For further information see https://covesa.global
             <complete>
                 <size>TODO</size>
                 <checksum type="sha1">TODO</checksum>
-                <url>covesa-avd-x86_64-31_r34.zip</url>
+                <url>covesa-avd-x86_64-35_r23.zip</url>
             </complete>
         </archive>
     </archives>
