@@ -9,3 +9,6 @@ BUILD_EMULATOR_CLUSTER_DISPLAY := true
 PRODUCT_PACKAGES += \
 	CarServiceOverlay \
 	NoUICarProvision
+
+
+PRODUCT_CHARACTERISTICS := automotive
