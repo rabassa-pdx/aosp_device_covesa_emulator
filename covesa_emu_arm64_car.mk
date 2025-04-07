@@ -20,8 +20,6 @@
 # For further information see https://covesa.global
 #
 
-BUILD_EMULATOR_CLUSTER_DISPLAY := true
-
 $(call inherit-product, device/generic/goldfish/car/sdk_car_arm64.mk)
 $(call inherit-product, device/covesa/common.mk)
 
