@@ -4,3 +4,8 @@ PRODUCT_COPY_FILES += \
 
 
 BUILD_EMULATOR_CLUSTER_DISPLAY := true
+
+
+PRODUCT_PACKAGES += \
+	CarServiceOverlay \
+	NoUICarProvision
