@@ -21,8 +21,8 @@
 #
 
 
-$(call inherit-product, device/generic/goldfish/car/sdk_car_x86_64.mk)
 $(call inherit-product, device/covesa/common.mk)
+$(call inherit-product, device/generic/goldfish/car/sdk_car_x86_64.mk)
 
 PRODUCT_NAME := covesa_emu_x86_64_car
 PRODUCT_DEVICE := emulator_x86_64
