@@ -8,8 +8,8 @@ BUILD_EMULATOR_CLUSTER_DISPLAY := true
 
 
 PRODUCT_PACKAGES += \
-	CarServiceOverlay \
-	NoUICarProvision
+	CustomCarProvision \
+	CustomCarLauncher
 
 
 PRODUCT_CHARACTERISTICS := automotive
