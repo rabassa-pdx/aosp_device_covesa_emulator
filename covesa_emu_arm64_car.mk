@@ -20,8 +20,8 @@
 # For further information see https://covesa.global
 #
 
-$(call inherit-product, device/generic/goldfish/car/sdk_car_arm64.mk)
 $(call inherit-product, device/covesa/common.mk)
+$(call inherit-product, device/generic/goldfish/car/sdk_car_arm64.mk)
 
 PRODUCT_NAME := covesa_emu_arm64_car
 PRODUCT_DEVICE := emulator_arm64
