@@ -142,14 +142,13 @@ public final class DefaultActivity extends Activity {
         int userId = getUserId();
         Log.i(TAG, "onCreate() for user " + userId + " Intent: " + getIntent());
 
+        // In order to skip the setup wizard screen, 
+        // we call the method finishSetup directly to complete all provisioning.
+        
         Log.e(TAG, "Custom provision activity is starting");
+        finishSetup();
 
-        if (true) {
-            finishSetup();
-            Log.e(TAG, "Custom provision finished setup");
-            return;
-        }
-
+        /*
         if (userId == UserHandle.USER_SYSTEM && UserManager.isHeadlessSystemUserMode()) {
             // System user will be provisioned together with the first non-system user
             Log.i(TAG, "onCreate(): skipping setup on headless system user");
@@ -183,6 +182,7 @@ public final class DefaultActivity extends Activity {
         updateUi();
         setManagedProvisioning(dpm);
         startMonitor();
+        */
     }
 
     private void startMonitor() {
@@ -500,14 +500,6 @@ public final class DefaultActivity extends Activity {
         Log.i(TAG, "Disabling itself (" + name + ") for user " + getUserId());
         pm.setComponentEnabledSetting(name, PackageManager.COMPONENT_ENABLED_STATE_DISABLED,
                 PackageManager.DONT_KILL_APP);
-/* 
-        String launcherPackage = "com.android.car.carlauncher";
-        String launchername = "com.android.car.carlauncher.CarLauncher";
-
-        ComponentName launcherName = new ComponentName(launcherPackage, launchername);
-        Log.i(TAG, "Enabling car launcher ( " + launcherName + " ) for user " + getUserId());
-        pm.setComponentEnabledSetting(launcherName, PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
-                PackageManager.DONT_KILL_APP); */
 
         finish();
     }
